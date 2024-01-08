@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.6.final using JasperReports Library version 6.20.6-5c96b6aa8a39ac1dc6b6bea4b81168e16dd39231  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="cubill" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0cfe16b7-3ed3-49ad-b29c-685c209d3825">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (10)"/>
+	<queryString language="SQL">
+		<![CDATA[select * from order_item 
+left join
+orders 
+on order_item. order_id = orders.order_id;]]>
+	</queryString>
+	<field name="order_id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="order_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="order_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="order_item"/>
+	</field>
+	<field name="item_code" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="item_code"/>
+		<property name="com.jaspersoft.studio.field.label" value="item_code"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="order_item"/>
+	</field>
+	<field name="item_qty" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="item_qty"/>
+		<property name="com.jaspersoft.studio.field.label" value="item_qty"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="order_item"/>
+	</field>
+	<field name="item_unit_price" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="item_unit_price"/>
+		<property name="com.jaspersoft.studio.field.label" value="item_unit_price"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="order_item"/>
+	</field>
+	<field name="total" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="total"/>
+		<property name="com.jaspersoft.studio.field.label" value="total"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="order_item"/>
+	</field>
+	<field name="COLUMN_6" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="order_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="order_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="orders"/>
+	</field>
+	<field name="cu_id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="cu_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="cu_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="orders"/>
+	</field>
+	<field name="dueDate" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="dueDate"/>
+		<property name="com.jaspersoft.studio.field.label" value="dueDate"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="orders"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="570" height="74" backcolor="#17214A" uuid="a3e87cee-d4ba-475c-af51-691a84733fb2"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="20" width="450" height="54" forecolor="#F0E6E6" backcolor="#FFFFFF" uuid="7b1594c4-4803-427b-8810-e0102328a2d8"/>
+				<textElement verticalAlignment="Top" rotation="None">
+					<font size="24" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[                                Thissa Sahal ..]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="12" y="0" width="530" height="30" uuid="6b0d6829-2fe1-4243-ba20-cecfaabc6dd4"/>
+				<textElement>
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[     No : 07, Hmbanthota, Thissamaharama.  Tel - 0775678904]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="66" splitType="Stretch">
+			<staticText>
+				<reportElement x="300" y="10" width="100" height="30" uuid="adadab63-9cab-4987-8eb4-0898a9d2076c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1cd9b697-ba70-4928-be57-bdb06f7a43cb"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Customer Id:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="440" y="10" width="100" height="30" uuid="646c2dd7-9ae5-4a51-94b5-74fcbdf54507">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1cd9b697-ba70-4928-be57-bdb06f7a43cb"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{cu_id}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="10" width="100" height="30" uuid="bc56a95c-d7a3-48b3-9195-954962a45a9b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2cc17483-04a0-4940-935e-13b66d02f5fe"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Order Code:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="140" y="10" width="100" height="30" uuid="ff972717-3425-4ac2-b2a0-77a33d56aaf5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2cc17483-04a0-4940-935e-13b66d02f5fe"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{order_id}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="130" splitType="Stretch">
+			<textField>
+				<reportElement x="380" y="50" width="100" height="30" uuid="bda196e0-2451-4f02-b939-a1cbb1e60da1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1c6a7dd7-23b3-496f-a931-ae3abf7d6bf8"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="50" width="100" height="30" uuid="3c9e828c-e802-40ea-8c1b-48d05053aa89">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6cbb47a6-8765-4d5f-86dd-bdfa2c0ecc28"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{item_qty}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="380" y="0" width="100" height="30" uuid="d903e06f-ef7d-4c14-8e1c-766cfb9c2803">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1c6a7dd7-23b3-496f-a931-ae3abf7d6bf8"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="4" width="100" height="30" uuid="d9c79299-deef-40c6-8b26-8f4323be68f6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6cbb47a6-8765-4d5f-86dd-bdfa2c0ecc28"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Item QTY :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="180" y="50" width="100" height="30" uuid="22668f91-462c-4107-ac0d-1eb7f86aa017">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b73ff783-030a-4d77-8012-2b153ba0abf2"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{item_unit_price}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="180" y="0" width="100" height="30" uuid="1dd92752-90b7-487f-b460-c29260e70466">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b73ff783-030a-4d77-8012-2b153ba0abf2"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Unit Price :]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<summary>
+		<band height="360" splitType="Stretch">
+			<textField>
+				<reportElement x="180" y="20" width="100" height="30" uuid="958b79d6-3d0b-43e4-9c85-79ad4682877a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e10742e0-d1de-4ef1-9052-884ee89c0d40"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{dueDate}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="20" width="100" height="30" uuid="34ef9307-e274-486d-b4da-4a2fc6d8b79a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e10742e0-d1de-4ef1-9052-884ee89c0d40"/>
+				</reportElement>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="80" width="345" height="30" forecolor="#801B19" uuid="f790f42f-60e6-4d25-8bfd-4f64f7eec69b"/>
+				<textElement>
+					<font size="20" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[  Thank You..Come again...]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="165" width="380" height="30" uuid="516bcbf3-7843-4ede-914d-bba2bbe2bfe2"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Rathu Kakulu 10kg ,25kg,50kg ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="170" width="155" height="30" uuid="d9a43dcc-76de-4344-91b5-68b9306f383f"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Rathukakulu 10kg -2000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="120" width="240" height="30" forecolor="#941B19" uuid="fc2ea29b-722b-4d96-8649-1d359b6db64c"/>
+				<textElement>
+					<font size="20" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[      Rice Details]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="210" width="380" height="30" uuid="60a4e251-e279-413c-8196-e7a135460579"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Sudu Kakulu 10kg ,25kg,50kg ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="402" y="210" width="155" height="30" uuid="6aec8f60-d66e-49a1-9ec9-706be8e9349e"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Sudukakulu 10kg -2500]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="250" width="380" height="30" uuid="0b802731-bbdd-4013-9c01-d15ca49bb7dd"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Punni Samba 10kg ,25kg,50kg ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="402" y="250" width="155" height="30" uuid="d6ed5218-93d9-46e1-aee0-9e9a6ee46346"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[PunniSamba 10kg -3000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="290" width="380" height="30" uuid="162914e5-3eb7-4504-b279-b5847adf9003"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Keeri Samba 10kg ,25kg,50kg ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="402" y="290" width="155" height="30" uuid="4df6407a-6013-40eb-8076-ee5f524b6f54"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[KeeriSamba 10kg -4000]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="330" width="380" height="30" uuid="6e55dc87-0c7a-44e3-b6ba-edd7b7c4a98a"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Rathu Nadu 10kg ,25kg,50kg ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="402" y="330" width="155" height="30" uuid="1661e9f9-128c-4f20-9006-1b5b55ab8773"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[RathuNadu10kg -3000]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.D.Controller.DashboardFromController">
+   <children>
+      <BarChart fx:id="barChart" layoutX="32.0" layoutY="286.0" legendVisible="false" prefHeight="400.0" prefWidth="535.0" style="-fx-background-color: white;" styleClass="chart-bar" stylesheets="@../CSS/style.css">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Label layoutX="76.0" layoutY="241.0" text="Today Item Details.">
+         <font>
+            <Font name="Georgia Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="44.0" prefHeight="67.0" prefWidth="228.0" text="Hellow ,User">
+         <font>
+            <Font name="Javanese Text" size="24.0" />
+         </font>
+      </Label>
+      <ImageView layoutX="197.0" layoutY="53.0">
+         <image>
+            <Image url="@../icon/icons8-telegram-50.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="48.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Anu Rice Milling Management.." wrappingWidth="212.60003662109375">
+         <font>
+            <Font name="System Bold Italic" size="10.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#229170" height="221.0" layoutX="416.0" layoutY="44.0" stroke="BLACK" strokeType="INSIDE" width="565.0" />
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#e6ecf2" height="109.0" layoutX="437.0" layoutY="132.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#e6ecf2" height="109.0" layoutX="624.0" layoutY="132.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#e6ecf2" height="109.0" layoutX="804.0" layoutY="132.0" stroke="BLACK" strokeType="INSIDE" width="150.0" />
+      <Text layoutX="450.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+10% from yesterday">
+         <font>
+            <Font name="System Bold Italic" size="10.0" />
+         </font>
+      </Text>
+      <Text layoutX="444.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Product Sale">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="450.0" layoutY="137.0">
+         <image>
+            <Image url="@../icon/icons8-product-64.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="532.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="29">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <ImageView layoutX="645.0" layoutY="149.0">
+         <image>
+            <Image url="@../icon/icons8-customer-26.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="645.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New Customers">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="645.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+8% from yesterday">
+         <font>
+            <Font name="System Bold Italic" size="10.0" />
+         </font>
+      </Text>
+      <Text layoutX="716.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="40">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <ImageView layoutX="825.0" layoutY="145.0">
+         <image>
+            <Image url="@../icon/icons8-create-order-48.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="825.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Orders">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="815.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="+7% from yesterday">
+         <font>
+            <Font name="System Bold Italic" size="10.0" />
+         </font>
+      </Text>
+      <Text layoutX="903.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="20">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Label layoutX="455.0" layoutY="78.0" text="Today's Summary.">
+         <font>
+            <Font name="Georgia Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="814.0" layoutY="516.0" mnemonicParsing="false" onAction="#btnLogoutOnAction" prefHeight="40.0" prefWidth="130.0" style="-fx-background-color: black;" text="Logout" textFill="#dcd2d2">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="716.0" layoutY="511.0">
+         <image>
+            <Image url="@../icon/icons8-hand-right-skin-type-1-100.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="300.0" layoutY="220.0">
+         <image>
+            <Image url="@../icon/icons8-stock-exchange-app-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="276.0" layoutY="38.0">
+         <image>
+            <Image url="@../image/png-transparent-plant-logo-graphy-rice-leaf-photography-grass-thumbnail.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

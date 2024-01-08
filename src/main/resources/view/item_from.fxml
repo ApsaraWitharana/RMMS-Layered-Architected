@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="txtpane" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.D.Controller.ItemFromController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="500.0" layoutY="1.0" opacity="0.85">
+         <image>
+            <Image url="@../image/png-transparent-plant-logo-graphy-rice-leaf-photography-grass-thumbnail.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtId" layoutX="21.0" layoutY="235.0" prefHeight="34.0" prefWidth="278.0" promptText="Id" />
+      <TextField fx:id="txtName" layoutX="21.0" layoutY="316.0" prefHeight="34.0" prefWidth="278.0" promptText="Name" />
+      <TextField fx:id="txtDescription" layoutX="21.0" layoutY="403.0" prefHeight="34.0" prefWidth="278.0" promptText="Description" />
+      <TextField fx:id="txtUnitPrice" layoutX="21.0" layoutY="491.0" prefHeight="34.0" prefWidth="278.0" promptText="Unit Price" />
+      <TextField fx:id="txtQty" layoutX="21.0" layoutY="587.0" prefHeight="34.0" prefWidth="278.0" promptText="Qty" />
+      <TableView fx:id="tbleItem" layoutX="313.0" layoutY="235.0" prefHeight="438.0" prefWidth="679.0">
+        <columns>
+          <TableColumn fx:id="colCode" prefWidth="135.99993896484375" text="CODE" />
+          <TableColumn fx:id="colName" prefWidth="137.60000610351562" text="NAME" />
+            <TableColumn fx:id="colDescription" prefWidth="161.60003662109375" text="DESCRIPTION" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="125.59991455078125" text="UNIT PRICE" />
+            <TableColumn fx:id="colQty" prefWidth="120.800048828125" text="QTY ON HAND" />
+        </columns>
+      </TableView>
+      <Text layoutX="27.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ITEM CODE:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="27.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NAME:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="27.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DESCRIPTION:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="25.0" layoutY="469.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UNIT PRICE:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="23.0" layoutY="562.0" strokeType="OUTSIDE" strokeWidth="0.0" text="QTY ON HAND:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#30965c" layoutX="105.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Manage" wrappingWidth="238.25152587890625">
+         <font>
+            <Font name="Georgia Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#262827" layoutX="365.0" layoutY="199.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Details." wrappingWidth="238.25152587890625">
+         <font>
+            <Font name="Georgia Bold" size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnSave" layoutX="539.0" layoutY="55.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="42.0" prefWidth="176.0" style="-fx-background-color: green;" text="Save">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDelete" layoutX="785.0" layoutY="55.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="42.0" prefWidth="176.0" style="-fx-background-color: green;" text="Delete">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <ImageView layoutX="41.0" layoutY="38.0">
+         <image>
+            <Image url="@../icon/icons8-create-order-48.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnAddNewItem" layoutX="365.0" layoutY="42.0" mnemonicParsing="false" onAction="#btnAddNewOnAction" prefHeight="26.0" prefWidth="102.0" style="-fx-background-color: #000000;" text="+Add New" textFill="#faf9f9">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="785.0" layoutY="150.0" mnemonicParsing="false" onAction="#btnItemReportOnAction" prefHeight="48.0" prefWidth="176.0" style="-fx-background-color: black;" text="Item Report" textFill="#f2f0f0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

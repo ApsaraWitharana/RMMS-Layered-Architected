@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="txtpane" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.D.Controller.CustomerFromController">
+   <children>
+      <ImageView fx:id="btnAddNewOnAction" fitHeight="700.0" fitWidth="500.0" opacity="0.85">
+         <image>
+            <Image url="@../image/png-transparent-plant-logo-graphy-rice-leaf-photography-grass-thumbnail.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblCustomer" layoutX="359.0" layoutY="294.0" prefHeight="383.0" prefWidth="626.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="91.20001220703125" text="ID" />
+          <TableColumn fx:id="colName" prefWidth="97.59994506835938" text="NAME" />
+            <TableColumn fx:id="colAddress" prefWidth="141.60003662109375" text="ADDRESS" />
+            <TableColumn fx:id="colContact" prefWidth="151.99993896484375" text="CONTACT" />
+            <TableColumn fx:id="colEmail" prefWidth="144.800048828125" text="EMAIL" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnSave" layoutX="541.0" layoutY="34.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="42.0" prefWidth="176.0" style="-fx-background-color: green;" text="Save">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDelete" layoutX="778.0" layoutY="34.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="42.0" prefWidth="176.0" style="-fx-background-color: #0c9146;" text="Delete">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtName" layoutX="36.0" layoutY="315.0" prefHeight="34.0" prefWidth="278.0" promptText="Name" />
+      <TextField fx:id="txtAddress" layoutX="36.0" layoutY="416.0" prefHeight="34.0" prefWidth="278.0" promptText="Address" />
+      <TextField fx:id="txtContact" layoutX="36.0" layoutY="520.0" prefHeight="34.0" prefWidth="278.0" promptText="Contact" />
+      <TextField fx:id="txtEmail" layoutX="36.0" layoutY="624.0" prefHeight="34.0" prefWidth="278.0" promptText="Email" />
+      <Text layoutX="42.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Name :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="43.0" layoutY="389.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Address :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="43.0" layoutY="491.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Contact :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="44.0" layoutY="593.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Email :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtId" layoutX="36.0" layoutY="231.0" prefHeight="34.0" prefWidth="278.0" promptText="Id" />
+      <Text layoutX="36.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Id :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="61.0" fitWidth="63.0" layoutX="48.0" layoutY="34.0">
+         <image>
+            <Image url="@../icon/icons8-customer-26.png" />
+         </image>
+      </ImageView>
+      <Text fill="#30965c" layoutX="107.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Manage" wrappingWidth="238.25152587890625">
+         <font>
+            <Font name="Georgia Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#262827" layoutX="525.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Details." wrappingWidth="238.25152587890625">
+         <font>
+            <Font name="Georgia Bold" size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnAddNewCustomer" layoutX="391.0" layoutY="51.0" mnemonicParsing="false" onAction="#btnAddNewOnAction" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: #141e15;" text="+Add New" textFill="#e9efea">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="777.0" layoutY="139.0" mnemonicParsing="false" onAction="#btnCustomerOnAction" prefHeight="42.0" prefWidth="176.0" style="-fx-background-color: black;" text="Customer Report" textFill="#ece3e3">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

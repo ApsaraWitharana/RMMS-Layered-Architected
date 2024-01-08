@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="txtAncerpane" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.D.Controller.SupplierFromController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="500.0" opacity="0.85">
+         <image>
+            <Image url="@../image/png-transparent-plant-logo-graphy-rice-leaf-photography-grass-thumbnail.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tblSupplier" layoutX="363.0" layoutY="342.0" prefHeight="339.0" prefWidth="623.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="93.60003662109375" text="ID" />
+          <TableColumn fx:id="colName" prefWidth="109.59994506835938" text="NAME" />
+            <TableColumn fx:id="colAddress" prefWidth="130.4000244140625" text="ADDRESS" />
+            <TableColumn fx:id="colContact" prefWidth="147.199951171875" text="CONTACT" />
+            <TableColumn fx:id="colEmail" prefWidth="143.20001220703125" text="EMAIL" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtId" layoutX="46.0" layoutY="177.0" prefHeight="34.0" prefWidth="278.0" promptText="Id" />
+      <Text layoutX="47.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Supplier Id :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtName" layoutX="46.0" layoutY="279.0" prefHeight="34.0" prefWidth="278.0" promptText="Name" />
+      <Text layoutX="45.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Supplier Name :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtAddress" layoutX="46.0" layoutY="383.0" prefHeight="34.0" prefWidth="278.0" promptText="Address" />
+      <Text layoutX="45.0" layoutY="365.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Supplier Address :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtContact" layoutX="46.0" layoutY="487.0" prefHeight="34.0" prefWidth="278.0" promptText="Contact" />
+      <Text layoutX="45.0" layoutY="468.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Supplier Contact :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtEmail" layoutX="46.0" layoutY="602.0" prefHeight="34.0" prefWidth="278.0" promptText="Email" />
+      <Text layoutX="46.0" layoutY="575.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Supplier Email :">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnSave" layoutX="551.0" layoutY="44.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="42.0" prefWidth="176.0" style="-fx-background-color: green;" text="Save">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDelete" layoutX="788.0" layoutY="44.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="42.0" prefWidth="176.0" style="-fx-background-color: green;" text="Delete">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Text fill="#30965c" layoutX="116.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Supplier Manage" wrappingWidth="238.25152587890625">
+         <font>
+            <Font name="Georgia Bold" size="24.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="53.0" fitWidth="52.0" layoutX="56.0" layoutY="42.0">
+         <image>
+            <Image url="@../icon/icons8-supplier-30.png" />
+         </image>
+      </ImageView>
+      <Text fill="#262827" layoutX="526.0" layoutY="293.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Supplier Details." wrappingWidth="238.25152587890625">
+         <font>
+            <Font name="Georgia Bold" size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnAddNewSupplier" layoutX="385.0" layoutY="42.0" mnemonicParsing="false" onAction="#btnAddNewOnAction" prefHeight="26.0" prefWidth="94.0" style="-fx-background-color: black;" text="+Add New" textFill="#fcfafa">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="788.0" layoutY="164.0" mnemonicParsing="false" onAction="#btnSupplierOnAction" prefHeight="42.0" prefWidth="176.0" style="-fx-background-color: black;" text="Supplier Report" textFill="#efe8e8">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

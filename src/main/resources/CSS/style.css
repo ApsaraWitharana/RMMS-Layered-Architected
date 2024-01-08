@@ -1,0 +1,9 @@
+.chart-bar {
+    -fx-bar-fill: #0c694d;
+
+}
+
+.loginpassword{
+    -fx-background-radius: 10;
+    -fx-font: 10 "Offside";
+}

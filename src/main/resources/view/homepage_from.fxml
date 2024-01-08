@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #229170;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.D.Controller.HomepageFromController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#229170" height="819.0" layoutY="-4.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <AnchorPane fx:id="txtAnchorPane" layoutX="200.0" layoutY="108.0" prefHeight="700.0" prefWidth="1000.0" />
+      <Button layoutX="12.0" layoutY="123.0" mnemonicParsing="false" onAction="#btnDashboardOnAction" prefHeight="30.0" prefWidth="175.0" text="Dashboard">
+         <font>
+            <Font name="Gadugi Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="12.0" layoutY="192.0" mnemonicParsing="false" onAction="#btnItemOnAction" prefHeight="30.0" prefWidth="175.0" text="Items">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="11.0" layoutY="268.0" mnemonicParsing="false" onAction="#btnStockOnAction" prefHeight="30.0" prefWidth="175.0" text="Stock">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="11.0" layoutY="347.0" mnemonicParsing="false" onAction="#btnSupplierOnAction" prefHeight="30.0" prefWidth="175.0" text="Suppliers">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="11.0" layoutY="421.0" mnemonicParsing="false" onAction="#btnCustomerOnAction" prefHeight="30.0" prefWidth="175.0" text="Customers">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="11.0" layoutY="504.0" mnemonicParsing="false" onAction="#btnEmployeeOnAction" prefHeight="30.0" prefWidth="175.0" text="Employees">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="12.0" layoutY="586.0" mnemonicParsing="false" onAction="#btnCustomerOrdersOnAction" prefHeight="30.0" prefWidth="175.0" text="Customer orders">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="12.0" layoutY="664.0" mnemonicParsing="false" onAction="#btnSupplierOrdersOnAction" prefHeight="30.0" prefWidth="175.0" text="Supplier orders">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#0d2033" height="100.0" layoutX="200.0" opacity="0.3" stroke="BLACK" strokeType="INSIDE" width="1000.0" />
+      <TextField layoutX="469.0" layoutY="31.0" prefHeight="38.0" prefWidth="442.0" promptText="search hear" />
+      <ImageView layoutX="869.0" layoutY="35.0">
+         <image>
+            <Image url="@../icon/icons8-search-30 (1).png" />
+         </image>
+      </ImageView>
+      <Text fx:id="lblDate" layoutX="255.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="213.60003662109375">
+         <font>
+            <Font name="Segoe UI Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text fx:id="lbldate" layoutX="206.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date:" wrappingWidth="50.00000000000023">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Text>
+      <Text fx:id="lblTime" layoutX="924.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time">
+         <font>
+            <Font name="Segoe UI Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="lblTime" layoutX="962.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="140.00004882812502">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Text>
+      <ImageView fitHeight="75.0" fitWidth="75.0" layoutX="48.0" layoutY="21.0">
+         <image>
+            <Image url="@../image/png-transparent-plant-logo-graphy-rice-leaf-photography-grass-thumbnail.png" />
+         </image>
+         <viewport>
+            <Rectangle2D width="25.0" />
+         </viewport>
+      </ImageView>
+      <ImageView layoutX="1115.0" layoutY="14.0">
+         <image>
+            <Image url="@../icon/icons8-male-user-50.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="1127.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="user Anu" />
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="1162.0" layoutY="38.0">
+         <image>
+            <Image url="@../icon/icons8-arrow-down-24.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
