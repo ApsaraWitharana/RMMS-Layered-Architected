@@ -3,6 +3,8 @@ package lk.ijse.D.dao.custom.impl;
 import lk.ijse.D.dao.SQLUtil;
 import lk.ijse.D.dao.custom.SupplierOrderDetailDAO;
 import lk.ijse.D.entity.SupplierOrderDetail;
+import net.sf.jasperreports.engine.design.JRDesignQuery;
+import net.sf.jasperreports.engine.design.JasperDesign;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -45,4 +47,19 @@ public class SupplierOrderDetailDAOImpl implements SupplierOrderDetailDAO {
           return null;
   }
 
+
+    @Override
+    public void JRDesignQuery() throws SQLException, ClassNotFoundException {
+        SQLUtil.execute("select * from supplier_lord_details\\n\" +\n" +
+                "  \"left join\\n\" +\n" +
+                "  \"supplier_order\\n\" +\n" +
+                "  \"on supplier_lord_details . order_id = supplier_order.order_id; ");
+        JRDesignQuery jrDesignQuery = new JRDesignQuery();
+//                jrDesignQuery.setText("select * from supplier_lord_details\n" +
+//                        "left join\n" +
+//                        "supplier_order\n" +
+//                        "on supplier_lord_details . order_id = supplier_order.order_id; ");
+        JasperDesign load = null;
+        load.setQuery(jrDesignQuery);
+    }
 }

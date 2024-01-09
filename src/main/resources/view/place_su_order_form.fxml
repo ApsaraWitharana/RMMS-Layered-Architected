@@ -93,5 +93,10 @@
             <Font name="System Bold" size="14.0" />
          </font>
       </Button>
+      <Button layoutX="18.0" layoutY="591.0" mnemonicParsing="false" onAction="#btnBillOnAction" prefHeight="48.0" prefWidth="200.0" style="-fx-background-color: black;" text="Genarate Bill" textFill="#f4eded">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

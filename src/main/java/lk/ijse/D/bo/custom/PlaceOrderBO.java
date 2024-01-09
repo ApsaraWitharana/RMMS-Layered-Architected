@@ -29,4 +29,6 @@ public interface PlaceOrderBO extends SuperBO {
 
     String generateOrderID()throws SQLException, ClassNotFoundException;
 
+    void JRDesignQuery();
+
 }

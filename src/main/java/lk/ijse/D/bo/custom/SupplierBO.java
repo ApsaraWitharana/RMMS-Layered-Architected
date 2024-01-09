@@ -22,4 +22,6 @@ public interface SupplierBO extends SuperBO {
     String generateSupplierID() throws SQLException, ClassNotFoundException;
 
     SupplierDTO searchSupplier (String su_id) throws SQLException, ClassNotFoundException;
+
+    void JRDesignQuery();
 }

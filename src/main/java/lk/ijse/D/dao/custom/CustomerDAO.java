@@ -20,4 +20,5 @@ public interface CustomerDAO extends CrudDAO<Customer> {
 //    String generateID() throws SQLException, ClassNotFoundException;
 //
 //    Customer search(String cu_id) throws SQLException, ClassNotFoundException;
+void JRDesignQuery() throws SQLException, ClassNotFoundException;
 }

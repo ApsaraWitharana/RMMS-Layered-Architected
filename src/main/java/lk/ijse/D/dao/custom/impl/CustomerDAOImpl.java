@@ -4,6 +4,8 @@ import lk.ijse.D.dao.SQLUtil;
 import lk.ijse.D.dao.custom.CustomerDAO;
 import lk.ijse.D.entity.Customer;
 import lk.ijse.D.entity.Item;
+import net.sf.jasperreports.engine.design.JRDesignDataset;
+import net.sf.jasperreports.engine.design.JRDesignQuery;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -76,5 +78,12 @@ public class CustomerDAOImpl implements CustomerDAO {
     }
 
 
-
+    @Override
+    public void JRDesignQuery() throws SQLException, ClassNotFoundException {
+        SQLUtil.execute("SELECT * FROM customer");
+        JRDesignQuery jrDesignQuery = new JRDesignQuery();
+       // jrDesignQuery.setText("SELECT * FROM customer ");
+        JRDesignDataset load = null;
+        load.setQuery(jrDesignQuery);
+    }
 }

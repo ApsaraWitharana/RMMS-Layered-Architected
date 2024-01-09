@@ -385,12 +385,12 @@ public class PlaceOrderFromController {
         String order_id = this .lblOrderId .getText();
         InputStream resourceAsStream = getClass().getResourceAsStream("/report/CustomerOrder.jrxml");
         JasperDesign load = JRXmlLoader.load(resourceAsStream);
-        JRDesignQuery jrDesignQuery = new JRDesignQuery();
-        jrDesignQuery.setText("select * from order_details\n" +
-                "left join\n" +
-                "orders \n" +
-                "on order_details. order_id = orders.order_id;");
-        load.setQuery(jrDesignQuery);
+//        JRDesignQuery jrDesignQuery = new JRDesignQuery();
+//        jrDesignQuery.setText("select * from order_details\n" +
+//                "left join\n" +
+//                "orders \n" +
+//                "on order_details. order_id = orders.order_id;");
+//        load.setQuery(jrDesignQuery);
 
         JasperReport jasperReport = JasperCompileManager.compileReport(load);
         JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport,null, DbConnection.getDbConnection().getConnection());
@@ -408,12 +408,12 @@ public class PlaceOrderFromController {
         String order_id = this .lblOrderId .getText();
         InputStream resourceAsStream = getClass().getResourceAsStream("/report/cuorderbill.jrxml");
         JasperDesign load = JRXmlLoader.load(resourceAsStream);
-        JRDesignQuery jrDesignQuery = new JRDesignQuery();
-        jrDesignQuery.setText("select * from order_details\n" +
-                "left join\n" +
-                "orders \n" +
-                "on order_details. order_id = orders.order_id;");
-        load.setQuery(jrDesignQuery);
+//        JRDesignQuery jrDesignQuery = new JRDesignQuery();
+//        jrDesignQuery.setText("select * from order_details\n" +
+//                "left join\n" +
+//                "orders \n" +
+//                "on order_details. order_id = orders.order_id;");
+//        load.setQuery(jrDesignQuery);
 
         JasperReport jasperReport = JasperCompileManager.compileReport(load);
         JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport,null, DbConnection.getDbConnection().getConnection());

@@ -4,6 +4,9 @@ import lk.ijse.D.dao.SQLUtil;
 import lk.ijse.D.dao.custom.EmployeeDAO;
 import lk.ijse.D.entity.Employee;
 import lk.ijse.D.entity.Item;
+import net.sf.jasperreports.engine.design.JRDesignDataset;
+import net.sf.jasperreports.engine.design.JRDesignQuery;
+import net.sf.jasperreports.engine.design.JasperDesign;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -76,5 +79,14 @@ public class EmployeeDAOImpl implements EmployeeDAO {
           rst.next();
           return new Employee(emp_id+"",rst.getString("emp_name"),rst.getString("emp_dob"),rst.getString("emp_address"),rst.getString("job_title"),rst.getString("emp_nic"),rst.getString("contact"),rst.getString("emp_email"),rst.getString("salary"));
 
+    }
+
+    @Override
+    public void RDesignQuery() throws SQLException, ClassNotFoundException {
+        SQLUtil.execute("SELECT * FROM employee ") ;
+        JRDesignQuery jrDesignQuery = new JRDesignQuery();
+        //jrDesignQuery.setText("SELECT * FROM employee ");
+        JasperDesign load = null;
+        load.setQuery(jrDesignQuery);
     }
 }

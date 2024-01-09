@@ -59,5 +59,10 @@ public class ItemBOImpl implements ItemBO {
         return new ItemDTO(item.getItem_code(), item.getName(), item.getDescription(), item.getUnit_price(), item.getQty());
     }
 
+    @Override
+    public void JRDesignQuery() {
+
+    }
+
 }
 

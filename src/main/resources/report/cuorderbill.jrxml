@@ -54,76 +54,55 @@ on order_details. order_id = orders.order_id;]]>
 	</background>
 	<title>
 		<band height="79" splitType="Stretch">
-			<rectangle>
-				<reportElement x="0" y="0" width="800" height="74" backcolor="#17214A" uuid="921b4366-c884-4173-822f-f32c177ec152"/>
-			</rectangle>
 			<staticText>
-				<reportElement x="150" y="12" width="450" height="54" forecolor="#F0E6E6" backcolor="#FFFFFF" uuid="60c0ff78-99a7-4290-8797-4717e0d47186"/>
+				<reportElement x="150" y="12" width="450" height="38" forecolor="#0F0E0E" backcolor="#0F0D0D" uuid="60c0ff78-99a7-4290-8797-4717e0d47186"/>
 				<box>
-					<pen lineColor="#FAF8F7"/>
+					<pen lineColor="#17120E"/>
 				</box>
 				<textElement verticalAlignment="Top" rotation="None">
-					<font fontName="Yu Gothic UI Semibold" size="26" isBold="true" isItalic="true" isUnderline="false"/>
+					<font fontName="Yu Gothic UI Semibold" size="26" isBold="false" isItalic="true" isUnderline="false"/>
 				</textElement>
-				<text><![CDATA[                  Thissa Sahal ..]]></text>
+				<text><![CDATA[                 THISSA    SAHAL.]]></text>
 			</staticText>
 		</band>
 	</title>
 	<pageHeader>
 		<band height="48" splitType="Stretch">
 			<staticText>
-				<reportElement x="40" y="18" width="740" height="30" uuid="39931852-eb84-4ee3-9d97-5310b528f370"/>
+				<reportElement x="60" y="0" width="740" height="30" uuid="39931852-eb84-4ee3-9d97-5310b528f370"/>
 				<textElement>
 					<font size="20"/>
 				</textElement>
-				<text><![CDATA[No : 07, Hmbanthota, Thissamaharama.  Tel - 0775678904]]></text>
+				<text><![CDATA[           No : 07, Hmbanthota, Thissamaharama.  Tel - 0775678904]]></text>
 			</staticText>
 		</band>
 	</pageHeader>
 	<columnHeader>
 		<band height="61" splitType="Stretch">
 			<staticText>
-				<reportElement x="0" y="0" width="100" height="30" uuid="5f3b8528-92aa-4aa4-8350-682bb156ad70">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1cad538c-f941-45ac-bf9a-4e0f6ac92acd"/>
+				<reportElement x="0" y="11" width="100" height="30" uuid="78fbc2db-5afc-406c-b670-3352be78371c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cfc51f96-c89a-47c1-8f12-72c53fd4d0c1"/>
 				</reportElement>
 				<textElement>
 					<font size="18"/>
 				</textElement>
-				<text><![CDATA[order Id:]]></text>
+				<text><![CDATA[Date:]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="160" y="1" width="100" height="30" uuid="45107feb-6a6c-4c98-8dd0-56598abc362a">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1cad538c-f941-45ac-bf9a-4e0f6ac92acd"/>
+				<reportElement x="160" y="15" width="100" height="30" uuid="ba147a0f-9a08-4930-9421-bb3f9a9c3a3b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cfc51f96-c89a-47c1-8f12-72c53fd4d0c1"/>
 				</reportElement>
 				<textElement>
 					<font size="18"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{order_id}]]></textFieldExpression>
-			</textField>
-			<staticText>
-				<reportElement x="580" y="1" width="100" height="30" uuid="6bc48d91-8a6d-4f6c-8bb9-b93c80a872aa">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="de8e5514-3cc4-489f-89dd-bedbbeabd7cb"/>
-				</reportElement>
-				<textElement>
-					<font size="18"/>
-				</textElement>
-				<text><![CDATA[customer Id:]]></text>
-			</staticText>
-			<textField>
-				<reportElement x="680" y="1" width="100" height="30" uuid="1b8b65e5-2519-4bab-8dd7-46a63aea28bc">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="de8e5514-3cc4-489f-89dd-bedbbeabd7cb"/>
-				</reportElement>
-				<textElement>
-					<font size="18"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$F{cu_id}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{dueDate}]]></textFieldExpression>
 			</textField>
 		</band>
 	</columnHeader>
 	<detail>
-		<band height="297" splitType="Stretch">
+		<band height="300" splitType="Stretch">
 			<textField>
-				<reportElement x="160" y="0" width="100" height="30" uuid="afbc6158-52bf-456b-a76c-453b94aae28d">
+				<reportElement x="310" y="50" width="100" height="30" uuid="afbc6158-52bf-456b-a76c-453b94aae28d">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b6a1d4db-fee5-454c-8750-b8c1a18433ad"/>
 				</reportElement>
 				<textElement>
@@ -132,7 +111,7 @@ on order_details. order_id = orders.order_id;]]>
 				<textFieldExpression><![CDATA[$F{qty}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="0" y="0" width="100" height="30" uuid="02ba2b28-2042-436e-ada8-3a746343b571">
+				<reportElement x="310" y="0" width="100" height="30" uuid="02ba2b28-2042-436e-ada8-3a746343b571">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b6a1d4db-fee5-454c-8750-b8c1a18433ad"/>
 				</reportElement>
 				<textElement>
@@ -141,7 +120,7 @@ on order_details. order_id = orders.order_id;]]>
 				<text><![CDATA[Qty:]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="380" y="0" width="100" height="30" uuid="db40de1b-e668-484b-9a0a-06e1a203858d">
+				<reportElement x="0" y="50" width="100" height="30" uuid="db40de1b-e668-484b-9a0a-06e1a203858d">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1b32011e-a1fa-406d-a3d8-222ebcb24ea7"/>
 				</reportElement>
 				<textElement>
@@ -150,126 +129,107 @@ on order_details. order_id = orders.order_id;]]>
 				<textFieldExpression><![CDATA[$F{unit_price}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="270" y="0" width="100" height="30" uuid="850892df-3435-4547-8a3c-70db4ecffeb6">
+				<reportElement x="0" y="0" width="100" height="30" uuid="850892df-3435-4547-8a3c-70db4ecffeb6">
 					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="1b32011e-a1fa-406d-a3d8-222ebcb24ea7"/>
 				</reportElement>
 				<textElement>
 					<font size="16"/>
 				</textElement>
-				<text><![CDATA[unit price:]]></text>
+				<text><![CDATA[Item Price :]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="680" y="0" width="100" height="30" uuid="8f1e02e2-3b08-4b1b-bc11-e53c87887496">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="52977475-76a6-47fe-9f85-ec78f4d7e951"/>
+				<reportElement x="580" y="50" width="100" height="30" uuid="35247767-c25b-4156-bbd0-05e06399125c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cf01cf3b-7e4e-45c6-8205-f3129d44a106"/>
 				</reportElement>
 				<textElement>
-					<font size="18"/>
+					<font size="16"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{total}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{unit_price}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="580" y="0" width="100" height="30" uuid="36c3d252-6e28-4335-aac2-ba2b69290cb3">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="52977475-76a6-47fe-9f85-ec78f4d7e951"/>
+				<reportElement x="580" y="0" width="100" height="30" uuid="044c4796-7f3b-4fb7-9ceb-5744b3548adc">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cf01cf3b-7e4e-45c6-8205-f3129d44a106"/>
 				</reportElement>
 				<textElement>
-					<font size="18"/>
+					<font size="16"/>
 				</textElement>
-				<text><![CDATA[Total:]]></text>
+				<text><![CDATA[Amount:]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="160" y="40" width="100" height="30" uuid="ba147a0f-9a08-4930-9421-bb3f9a9c3a3b">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cfc51f96-c89a-47c1-8f12-72c53fd4d0c1"/>
+				<reportElement x="580" y="99" width="100" height="30" uuid="56cf8562-f62c-4cbf-a183-1fe32c944275">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="52f44820-6358-46f7-90ac-afdc9e80d6c2"/>
 				</reportElement>
 				<textElement>
-					<font size="18"/>
+					<font size="16"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{dueDate}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{unit_price}]]></textFieldExpression>
 			</textField>
 			<staticText>
-				<reportElement x="0" y="40" width="100" height="30" uuid="78fbc2db-5afc-406c-b670-3352be78371c">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="cfc51f96-c89a-47c1-8f12-72c53fd4d0c1"/>
+				<reportElement x="0" y="99" width="180" height="30" uuid="e060a97f-950f-4964-9019-35bb3933d68a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="52f44820-6358-46f7-90ac-afdc9e80d6c2"/>
 				</reportElement>
 				<textElement>
-					<font size="18"/>
+					<font size="16"/>
 				</textElement>
-				<text><![CDATA[Date:]]></text>
+				<text><![CDATA[Gross Amount:]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="200" y="70" width="480" height="30" forecolor="#801B19" uuid="dca6ce9c-aa98-4ab1-bc40-b95857d2bb4a"/>
+				<reportElement x="0" y="150" width="100" height="30" uuid="53f7569f-568a-4428-ac58-ed05a683ee53">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b9bea592-93b2-4605-a55b-de646d293ffa"/>
+				</reportElement>
+				<textElement verticalAlignment="Bottom">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Cash :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="220" width="100" height="30" uuid="294614eb-90a1-4735-ac50-2bd3a5bf5f23"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Total Cash:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="580" y="220" width="100" height="30" uuid="236eb8b4-3bdc-4467-bd51-7856974b9c0e"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[3000.00]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="580" y="150" width="100" height="30" uuid="4ccc2b08-db5d-4078-bcfa-e0ae477ba939"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[5000.00]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="190" width="780" height="30" uuid="167099a5-2c25-4534-aff4-65d4f3bb79ab"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[.................................................................................................................................................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="250" width="780" height="30" uuid="f1010ba3-8081-4a3f-923e-b3f8e13971e8"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[.................................................................................................................................................]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="240" y="270" width="480" height="30" forecolor="#801B19" uuid="dca6ce9c-aa98-4ab1-bc40-b95857d2bb4a"/>
 				<textElement>
 					<font size="20" isBold="true" isItalic="true"/>
 				</textElement>
 				<text><![CDATA[ Thank You..Come again...]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="100" width="380" height="30" uuid="60d0bce3-3077-4502-b239-5e1c928a0aaa"/>
+				<reportElement x="0" y="120" width="780" height="30" uuid="c9cb197b-cdbb-485a-8d22-eeb41f535b51"/>
 				<textElement>
-					<font size="14"/>
+					<font size="16"/>
 				</textElement>
-				<text><![CDATA[Rathu Kakulu 10kg ,25kg,50kg ]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="480" y="100" width="300" height="30" uuid="9431d307-7f3b-4d06-a2da-ac1aa0842cc2"/>
-				<textElement>
-					<font size="14"/>
-				</textElement>
-				<text><![CDATA[Rathukakulu 10kg -2000]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="0" y="133" width="380" height="30" uuid="7ae7a80e-fab5-4a2e-bbf4-26fb687f0cf3"/>
-				<textElement>
-					<font size="14"/>
-				</textElement>
-				<text><![CDATA[Sudu Kakulu 10kg ,25kg,50kg ]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="480" y="133" width="300" height="30" uuid="6448152b-0fbd-40b1-a430-fc93b6615e48"/>
-				<textElement>
-					<font size="14"/>
-				</textElement>
-				<text><![CDATA[Sudukakulu 10kg -2500]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="0" y="167" width="380" height="30" uuid="93b37b83-56a8-4d82-a243-7c16216baf91"/>
-				<textElement>
-					<font size="14"/>
-				</textElement>
-				<text><![CDATA[Keeri Samba 10kg ,25kg,50kg ]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="480" y="163" width="300" height="30" uuid="0f060d5d-8826-41e8-807f-6bd91b32bf24"/>
-				<textElement>
-					<font size="14"/>
-				</textElement>
-				<text><![CDATA[PunniSamba 10kg -3000]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="0" y="197" width="380" height="30" uuid="9d35d4aa-94a4-49c0-98c1-f15cfee61407"/>
-				<textElement>
-					<font size="14"/>
-				</textElement>
-				<text><![CDATA[Rathu Nadu 10kg ,25kg,50kg ]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="480" y="197" width="300" height="30" uuid="b04e13a3-9400-40db-a235-ee3656957b02"/>
-				<textElement>
-					<font size="14"/>
-				</textElement>
-				<text><![CDATA[KeeriSamba 10kg -4000]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="0" y="227" width="380" height="30" uuid="d9e5d8bf-35e7-47d3-a16b-9ed5ee5e6102"/>
-				<textElement>
-					<font size="14"/>
-				</textElement>
-				<text><![CDATA[Punni Samba 10kg ,25kg,50kg ]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="480" y="227" width="300" height="30" uuid="1dac1a89-6586-4be4-9ab2-caf9f31400ff"/>
-				<textElement>
-					<font size="14"/>
-				</textElement>
-				<text><![CDATA[RathuNadu10kg -3000]]></text>
+				<text><![CDATA[.................................................................................................................................................]]></text>
 			</staticText>
 		</band>
 	</detail>

@@ -317,9 +317,9 @@ public class CustomerFromController {
         String Id = this .txtId .getText();
         InputStream resourceAsStream = getClass().getResourceAsStream("/report/Custom_4.jrxml");
         JasperDesign load = JRXmlLoader.load(resourceAsStream);
-        JRDesignQuery jrDesignQuery = new JRDesignQuery();
-        jrDesignQuery.setText("SELECT * FROM customer ");
-        load.setQuery(jrDesignQuery);
+        //JRDesignQuery jrDesignQuery = new JRDesignQuery();
+        //jrDesignQuery.setText("SELECT * FROM customer ");
+        //load.setQuery(jrDesignQuery);
 
         JasperReport jasperReport = JasperCompileManager.compileReport(load);
         JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport,null, DbConnection.getDbConnection().getConnection());

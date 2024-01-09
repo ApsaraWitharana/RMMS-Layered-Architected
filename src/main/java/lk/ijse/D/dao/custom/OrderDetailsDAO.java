@@ -22,4 +22,5 @@ public interface OrderDetailsDAO extends CrudDAO<OrderDetail> {
 //
 //    OrderDetail search (String order_id) throws SQLException, ClassNotFoundException;
 
+   void JRDesignQuery() throws SQLException, ClassNotFoundException;
 }

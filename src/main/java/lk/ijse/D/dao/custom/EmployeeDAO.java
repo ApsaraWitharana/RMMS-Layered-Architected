@@ -21,4 +21,6 @@ public interface EmployeeDAO extends CrudDAO<Employee> {
 //    String generateID() throws SQLException, ClassNotFoundException;
 //
 //    Employee search (String emp_id) throws SQLException, ClassNotFoundException;
+
+  void   RDesignQuery() throws SQLException, ClassNotFoundException;
 }

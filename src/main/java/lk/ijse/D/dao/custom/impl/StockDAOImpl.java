@@ -3,6 +3,8 @@ package lk.ijse.D.dao.custom.impl;
 import lk.ijse.D.dao.SQLUtil;
 import lk.ijse.D.dao.custom.StockDAO;
 import lk.ijse.D.entity.Stock;
+import net.sf.jasperreports.engine.design.JRDesignQuery;
+import net.sf.jasperreports.engine.design.JasperDesign;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -70,5 +72,14 @@ public class StockDAOImpl implements StockDAO {
         ResultSet rst = SQLUtil.execute("SELECT * FROM Stock WHERE id=?",id);
         rst.next();
         return new Stock(id+"",rst.getString("material_name"),rst.getInt("qty"),rst.getString("description"),rst.getDouble("unit_price"));
+    }
+
+    @Override
+    public void JRDesignQuery() throws SQLException, ClassNotFoundException {
+        SQLUtil.execute("SELECT * FROM stock");
+        JRDesignQuery jrDesignQuery = new JRDesignQuery();
+       // jrDesignQuery.setText("SELECT * FROM stock ");
+        JasperDesign load = null;
+        load.setQuery(jrDesignQuery);
     }
 }

@@ -4,6 +4,8 @@ import lk.ijse.D.dao.SQLUtil;
 import lk.ijse.D.dao.custom.SupplierDAO;
 import lk.ijse.D.entity.Item;
 import lk.ijse.D.entity.Supplier;
+import net.sf.jasperreports.engine.design.JRDesignQuery;
+import net.sf.jasperreports.engine.design.JasperDesign;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -69,4 +71,12 @@ public class SupplierDAOImpl implements SupplierDAO {
 
     }
 
+    @Override
+    public void JRDesignQuery() throws SQLException, ClassNotFoundException {
+        SQLUtil.execute("SELECT * FROM supplier ");
+        JRDesignQuery jrDesignQuery = new JRDesignQuery();
+        //jrDesignQuery.setText("SELECT * FROM supplier ");
+        JasperDesign load = null;
+        load.setQuery(jrDesignQuery);
+    }
 }

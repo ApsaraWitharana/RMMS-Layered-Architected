@@ -58,6 +58,11 @@ public class SupplierBOImpl implements SupplierBO {
         return supplierDTO;
 
     }
+
+    @Override
+    public void JRDesignQuery() {
+
+    }
 }
 
 

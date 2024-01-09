@@ -379,9 +379,9 @@ public class EmployeeFromController {
         String cu_id = this .txtId .getText();
         InputStream resourceAsStream = getClass().getResourceAsStream("/report/employeeR.jrxml");
         JasperDesign load = JRXmlLoader.load(resourceAsStream);
-        JRDesignQuery jrDesignQuery = new JRDesignQuery();
-        jrDesignQuery.setText("SELECT * FROM employee ");
-        load.setQuery(jrDesignQuery);
+//        JRDesignQuery jrDesignQuery = new JRDesignQuery();
+//        jrDesignQuery.setText("SELECT * FROM employee ");
+//        load.setQuery(jrDesignQuery);
 
         JasperReport jasperReport = JasperCompileManager.compileReport(load);
         JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport,null, DbConnection.getDbConnection().getConnection());

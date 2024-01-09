@@ -299,9 +299,9 @@ public class ItemFromController {
         String item_code = this .txtId .getText();
         InputStream resourceAsStream = getClass().getResourceAsStream("/report/Item-.jrxml");
         JasperDesign load = JRXmlLoader.load(resourceAsStream);
-        JRDesignQuery jrDesignQuery = new JRDesignQuery();
-        jrDesignQuery.setText("SELECT * FROM item ");
-        load.setQuery(jrDesignQuery);
+//        JRDesignQuery jrDesignQuery = new JRDesignQuery();
+//        jrDesignQuery.setText("SELECT * FROM item ");
+//        load.setQuery(jrDesignQuery);
 
         JasperReport jasperReport = JasperCompileManager.compileReport(load);
         JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport,null, DbConnection.getDbConnection().getConnection());

@@ -23,4 +23,5 @@ public interface StockBO extends SuperBO {
 
     StockDTO searchStock (String id) throws SQLException, ClassNotFoundException;
 
+    void JRDesignQuery();
 }

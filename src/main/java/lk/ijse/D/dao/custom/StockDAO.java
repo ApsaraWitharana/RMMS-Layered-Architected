@@ -23,4 +23,5 @@ public interface StockDAO extends CrudDAO<Stock> {
 //
 //    Stock search (String id) throws SQLException, ClassNotFoundException;
 
+    void JRDesignQuery() throws SQLException, ClassNotFoundException;
 }

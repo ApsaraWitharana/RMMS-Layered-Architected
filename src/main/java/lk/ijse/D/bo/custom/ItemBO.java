@@ -26,4 +26,5 @@ public interface ItemBO extends SuperBO {
 
     ItemDTO searchItem (String item_code) throws SQLException, ClassNotFoundException;
 
+     void JRDesignQuery();
 }

@@ -112,6 +112,11 @@ public class PlaceSupplierOrderBOImpl implements PlaceSupplierOrderBO {
     }
 
     @Override
+    public void JRDesignQuery() {
+
+    }
+
+    @Override
     public SupplierDTO searchSupplier (String su_id) throws SQLException, ClassNotFoundException{
 
         Supplier supplier = supplierDAO.search(su_id);

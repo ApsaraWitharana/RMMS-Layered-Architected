@@ -67,4 +67,9 @@ CustomerDAO customerDAO = (CustomerDAO) DAOFactory.getDaoFactory().getDAO(DAOFac
        return customerDTO;
     }
 
+    @Override
+    public void JRDesignQuery() {
+
+    }
+
 }

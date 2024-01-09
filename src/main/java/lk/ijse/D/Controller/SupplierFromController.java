@@ -299,9 +299,9 @@ public class SupplierFromController {
         String su_id = this .txtId .getText();
         InputStream resourceAsStream = getClass().getResourceAsStream("/report/SupplierR.jrxml");
         JasperDesign load = JRXmlLoader.load(resourceAsStream);
-        JRDesignQuery jrDesignQuery = new JRDesignQuery();
-        jrDesignQuery.setText("SELECT * FROM supplier ");
-        load.setQuery(jrDesignQuery);
+//        JRDesignQuery jrDesignQuery = new JRDesignQuery();
+//        jrDesignQuery.setText("SELECT * FROM supplier ");
+//        load.setQuery(jrDesignQuery);
 
         JasperReport jasperReport = JasperCompileManager.compileReport(load);
         JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport,null, DbConnection.getDbConnection().getConnection());

@@ -23,5 +23,5 @@ public interface CustomerBO extends SuperBO {
 
     CustomerDTO searchCustomer(String cu_id) throws SQLException, ClassNotFoundException;
 
-
+    void JRDesignQuery();
 }

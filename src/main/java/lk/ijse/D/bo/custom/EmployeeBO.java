@@ -22,4 +22,5 @@ public interface EmployeeBO extends SuperBO {
 
     EmployeeDTO searchEmployee (String emp_id) throws SQLException, ClassNotFoundException;
 
+    void   RDesignQuery() throws SQLException, ClassNotFoundException;
 }

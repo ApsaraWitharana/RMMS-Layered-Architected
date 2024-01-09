@@ -6,6 +6,8 @@ import javafx.scene.chart.XYChart;
 import lk.ijse.D.dao.SQLUtil;
 import lk.ijse.D.dao.custom.ItemDAO;
 import lk.ijse.D.entity.Item;
+import net.sf.jasperreports.engine.design.JRDesignQuery;
+import net.sf.jasperreports.engine.design.JasperDesign;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -107,6 +109,15 @@ public class ItemDAOImpl implements ItemDAO {
 //
 //        datalist.add(series);
 //        return datalist;
+    }
+
+    @Override
+    public void JRDesignQuery() throws SQLException, ClassNotFoundException {
+        SQLUtil.execute("SELECT * FROM item");
+        JRDesignQuery jrDesignQuery = new JRDesignQuery();
+      //  jrDesignQuery.setText("SELECT * FROM item ");
+        JasperDesign load = null;
+        load.setQuery(jrDesignQuery);
     }
 
 

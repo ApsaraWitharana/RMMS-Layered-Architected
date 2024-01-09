@@ -145,5 +145,10 @@ public class PlaceOrderBOImpl implements PlaceOrderBO {
 
     }
 
+    @Override
+    public void JRDesignQuery() {
+
+    }
+
 
 }

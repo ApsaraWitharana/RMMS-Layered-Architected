@@ -33,5 +33,5 @@ public interface ItemDAO extends CrudDAO<Item> {
 //
 //    Item search (String item_code) throws SQLException, ClassNotFoundException;
 
-
+    void JRDesignQuery() throws SQLException, ClassNotFoundException;
 }

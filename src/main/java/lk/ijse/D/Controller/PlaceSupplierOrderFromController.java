@@ -355,12 +355,34 @@ public class PlaceSupplierOrderFromController {
                 String order_id = this.lblOrderId .getText();
                 InputStream resourceAsStream = getClass().getResourceAsStream("/report/supplierOr.jrxml");
                 JasperDesign load = JRXmlLoader.load(resourceAsStream);
-                JRDesignQuery jrDesignQuery = new JRDesignQuery();
-                jrDesignQuery.setText("select * from supplier_lord_details\n" +
-                        "left join\n" +
-                        "supplier_order\n" +
-                        "on supplier_lord_details . order_id = supplier_order.order_id; ");
-                load.setQuery(jrDesignQuery);
+//                JRDesignQuery jrDesignQuery = new JRDesignQuery();
+//                jrDesignQuery.setText("select * from supplier_lord_details\n" +
+//                        "left join\n" +
+//                        "supplier_order\n" +
+//                        "on supplier_lord_details . order_id = supplier_order.order_id; ");
+//                load.setQuery(jrDesignQuery);
+
+                JasperReport jasperReport = JasperCompileManager.compileReport(load);
+                JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport,null, DbConnection.getDbConnection().getConnection());
+                JasperViewer.viewReport(jasperPrint,false);
+        }
+
+        @FXML
+        void btnBillOnAction(ActionEvent event) throws JRException, SQLException, ClassNotFoundException {
+                printBillReport();
+        }
+
+        private void printBillReport() throws JRException, SQLException, ClassNotFoundException {
+
+                String order_id = this.lblOrderId .getText();
+                InputStream resourceAsStream = getClass().getResourceAsStream("/report/SuOrderBill.jrxml");
+                JasperDesign load = JRXmlLoader.load(resourceAsStream);
+//               JRDesignQuery jrDesignQuery = new JRDesignQuery();
+//               jrDesignQuery.setText("select * from supplier_lord_details\n" +
+//                        "left join\n" +
+//                        "supplier_order\n" +
+//                        "on supplier_lord_details . order_id = supplier_order.order_id; ");
+//                load.setQuery(jrDesignQuery);
 
                 JasperReport jasperReport = JasperCompileManager.compileReport(load);
                 JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport,null, DbConnection.getDbConnection().getConnection());

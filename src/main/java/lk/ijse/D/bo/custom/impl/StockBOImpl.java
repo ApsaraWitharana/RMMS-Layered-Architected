@@ -58,4 +58,9 @@ public class StockBOImpl implements StockBO {
             return stockDTO;
     }
 
+    @Override
+    public void JRDesignQuery() {
+
+    }
+
 }
