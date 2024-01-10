@@ -7,3 +7,8 @@
     -fx-background-radius: 10;
     -fx-font: 10 "Offside";
 }
+
+
+ li {
+     display: inline;
+ }

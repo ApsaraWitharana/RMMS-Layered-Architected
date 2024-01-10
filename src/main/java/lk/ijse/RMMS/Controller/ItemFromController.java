@@ -156,10 +156,10 @@ public class ItemFromController {
         txtUnitPrice.clear();
         txtQty.clear();
        // txtId.setDisable(true);
-        txtName.setDisable(true);
-        txtDescription.setDisable(true);
-        txtUnitPrice.setDisable(true);
-        txtQty.setDisable(true);
+      //  txtName.setDisable(true);
+       // txtDescription.setDisable(true);
+       // txtUnitPrice.setDisable(true);
+       // txtQty.setDisable(true);
         txtId.setEditable(false);
         btnSave.setDisable(true);
         btnDelete.setDisable(true);

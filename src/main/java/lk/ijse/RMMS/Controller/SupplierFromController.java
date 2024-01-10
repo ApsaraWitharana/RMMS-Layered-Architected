@@ -153,11 +153,11 @@ public class SupplierFromController {
         txtAddress.clear();
         txtContact.clear();
         txtEmail.clear();
-        txtId.setDisable(true);
-        txtName.setDisable(true);
-        txtAddress.setDisable(true);
-        txtContact.setDisable(true);
-        txtEmail.setDisable(true);
+       // txtId.setDisable(true);
+       // txtName.setDisable(true);
+       // txtAddress.setDisable(true);
+       // txtContact.setDisable(true);
+       // txtEmail.setDisable(true);
         txtId.setEditable(false);
         btnSave.setDisable(true);
         btnDelete.setDisable(true);
