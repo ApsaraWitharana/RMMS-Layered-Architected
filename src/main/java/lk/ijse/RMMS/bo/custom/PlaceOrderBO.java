@@ -1,8 +1,8 @@
 package lk.ijse.RMMS.bo.custom;
 
-import lk.ijse.RMMS.DTO.CustomerDTO;
-import lk.ijse.RMMS.DTO.ItemDTO;
-import lk.ijse.RMMS.DTO.OrderDetailDTO;
+import lk.ijse.RMMS.dto.CustomerDTO;
+import lk.ijse.RMMS.dto.ItemDTO;
+import lk.ijse.RMMS.dto.OrderDetailDTO;
 import lk.ijse.RMMS.bo.SuperBO;
 
 import java.sql.SQLException;

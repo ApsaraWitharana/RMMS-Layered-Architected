@@ -1,6 +1,6 @@
 package lk.ijse.RMMS.bo.custom.impl;
 
-import lk.ijse.RMMS.DTO.LoginDTO;
+import lk.ijse.RMMS.dto.LoginDTO;
 import lk.ijse.RMMS.bo.custom.SignUpBO;
 import lk.ijse.RMMS.dao.DAOFactory;
 import lk.ijse.RMMS.dao.custom.SignUpDAO;

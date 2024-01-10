@@ -1,40 +1,23 @@
-package lk.ijse.RMMS.DTO;
+package lk.ijse.RMMS.dto;
 
 import java.io.Serializable;
 
-public class OrderDetailDTO implements Serializable {
+public class SupplierOrderDetailDTO implements Serializable {
 
     private String order_id;
     private String item_code;
     private int qty;
     private double unit_price;
 
-
-
-    public OrderDetailDTO() {
-
-    }
-
-    public OrderDetailDTO(String item_code,int qty, double unit_price) {
-        this.item_code = item_code;
-        this.qty = qty;
-        this.unit_price = unit_price;
-    }
-
-//    public OrderDetailDTO(String orderId, String itemCode, int qty, double unitPrice) {
-//        this.order_id = order_id;
-//        this.item_code = item_code;
-//        this.qty = qty;
-//        this.unit_price = unit_price;
-//    }
-
-
-    public OrderDetailDTO(String order_id, String item_code, int qty, double unit_price) {
-
+    public SupplierOrderDetailDTO(String order_id, String item_code, int qty, double unit_price) {
         this.order_id = order_id;
         this.item_code = item_code;
         this.qty = qty;
         this.unit_price = unit_price;
+    }
+
+    public SupplierOrderDetailDTO() {
+
     }
 
     public String getOrder_id() {
@@ -69,9 +52,15 @@ public class OrderDetailDTO implements Serializable {
         this.unit_price = unit_price;
     }
 
+    public SupplierOrderDetailDTO(String item_code, int qty, double unit_price) {
+        this.item_code = item_code;
+        this.qty = qty;
+        this.unit_price = unit_price;
+    }
+
     @Override
     public String toString() {
-        return "OrderDetailDTO{" +
+        return "SupplierOrderDetailDTO{" +
                 "order_id='" + order_id + '\'' +
                 ", item_code='" + item_code + '\'' +
                 ", qty=" + qty +

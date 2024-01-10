@@ -1,6 +1,6 @@
 package lk.ijse.RMMS.bo.custom.impl;
 
-import lk.ijse.RMMS.DTO.ItemDTO;
+import lk.ijse.RMMS.dto.ItemDTO;
 import lk.ijse.RMMS.bo.custom.ItemBO;
 import lk.ijse.RMMS.dao.DAOFactory;
 import lk.ijse.RMMS.dao.custom.ItemDAO;

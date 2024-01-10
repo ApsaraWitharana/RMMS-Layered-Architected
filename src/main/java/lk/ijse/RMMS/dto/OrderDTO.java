@@ -1,29 +1,38 @@
-package lk.ijse.RMMS.DTO;
+package lk.ijse.RMMS.dto;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
-public class SupplierOrderDTO {
+public class OrderDTO {
 
     private String order_id;
 
     private LocalDate dueDte;
 
-    private String su_id;
+    private String cu_id;
 
-    private String su_name;
+    private String cu_name;
 
     private BigDecimal total;
 
-    public SupplierOrderDTO(String order_id, LocalDate dueDte, String su_id, String su_name, BigDecimal total) {
+    public OrderDTO(String order_id, LocalDate dueDte, String cu_id, String cu_name, BigDecimal total) {
+
         this.order_id = order_id;
         this.dueDte = dueDte;
-        this.su_id = su_id;
-        this.su_name = su_name;
+        this.cu_id = cu_id;
+        this.cu_name = cu_name;
         this.total = total;
+
     }
 
-    public SupplierOrderDTO() {
+    public OrderDTO(String order_id,LocalDate dueDte,String cu_id) {
+
+        this.order_id = order_id;
+        this.dueDte = dueDte;
+        this.cu_id = cu_id;
+    }
+
+    public OrderDTO() {
 
     }
 
@@ -43,20 +52,20 @@ public class SupplierOrderDTO {
         this.dueDte = dueDte;
     }
 
-    public String getSu_id() {
-        return su_id;
+    public String getCu_id() {
+        return cu_id;
     }
 
-    public void setSu_id(String su_id) {
-        this.su_id = su_id;
+    public void setCu_id(String cu_id) {
+        this.cu_id = cu_id;
     }
 
-    public String getSu_name() {
-        return su_name;
+    public String getCu_name() {
+        return cu_name;
     }
 
-    public void setSu_name(String su_name) {
-        this.su_name = su_name;
+    public void setCu_name(String cu_name) {
+        this.cu_name = cu_name;
     }
 
     public BigDecimal getTotal() {
@@ -67,20 +76,13 @@ public class SupplierOrderDTO {
         this.total = total;
     }
 
-    public SupplierOrderDTO(String order_id, LocalDate dueDte, String su_id) {
-        this.order_id = order_id;
-        this.dueDte = dueDte;
-        this.su_id = su_id;
-
-    }
-
     @Override
     public String toString() {
-        return "SupplierOrderDTO{" +
+        return "OrderDTO{" +
                 "order_id='" + order_id + '\'' +
                 ", dueDte=" + dueDte +
-                ", su_id='" + su_id + '\'' +
-                ", su_name='" + su_name + '\'' +
+                ", cu_id='" + cu_id + '\'' +
+                ", cu_name='" + cu_name + '\'' +
                 ", total=" + total +
                 '}';
     }

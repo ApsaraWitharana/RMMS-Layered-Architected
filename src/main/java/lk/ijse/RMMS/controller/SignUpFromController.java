@@ -1,4 +1,4 @@
-package lk.ijse.RMMS.Controller;
+package lk.ijse.RMMS.controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -11,7 +11,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import lk.ijse.RMMS.DTO.LoginDTO;
+import lk.ijse.RMMS.dto.LoginDTO;
 import lk.ijse.RMMS.bo.BOFactory;
 import lk.ijse.RMMS.bo.custom.SignUpBO;
 

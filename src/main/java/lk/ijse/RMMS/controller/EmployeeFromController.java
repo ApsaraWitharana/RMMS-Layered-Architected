@@ -1,4 +1,4 @@
-package lk.ijse.RMMS.Controller;
+package lk.ijse.RMMS.controller;
 
 
         import javafx.event.ActionEvent;
@@ -6,7 +6,7 @@ package lk.ijse.RMMS.Controller;
         import javafx.scene.control.*;
         import javafx.scene.control.cell.PropertyValueFactory;
         import javafx.scene.layout.AnchorPane;
-        import lk.ijse.RMMS.DTO.EmployeeDTO;
+        import lk.ijse.RMMS.dto.EmployeeDTO;
         import lk.ijse.RMMS.bo.BOFactory;
         import lk.ijse.RMMS.bo.custom.EmployeeBO;
         import lk.ijse.RMMS.dbConnection.DbConnection;

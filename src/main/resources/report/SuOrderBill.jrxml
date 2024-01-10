@@ -185,7 +185,7 @@ on supplier_lord_details . order_id = supplier_order.order_id;]]>
 				<textElement>
 					<font size="16"/>
 				</textElement>
-				<text><![CDATA[5000.00]]></text>
+				<text><![CDATA[30000.00]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="0" y="215" width="780" height="30" uuid="bcf0bf62-8ba7-46ac-93b4-d7e36dc3f964"/>
@@ -210,7 +210,7 @@ on supplier_lord_details . order_id = supplier_order.order_id;]]>
 				<textElement>
 					<font size="16"/>
 				</textElement>
-				<text><![CDATA[3000.00]]></text>
+				<text><![CDATA[00.00]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="150" y="49" width="480" height="30" forecolor="#801B19" uuid="81608db3-0020-4991-8a78-879333657a06"/>

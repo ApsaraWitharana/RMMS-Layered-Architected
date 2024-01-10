@@ -1,6 +1,6 @@
 package lk.ijse.RMMS.bo.custom;
 
-import lk.ijse.RMMS.DTO.LoginDTO;
+import lk.ijse.RMMS.dto.LoginDTO;
 import lk.ijse.RMMS.bo.SuperBO;
 
 import java.sql.SQLException;

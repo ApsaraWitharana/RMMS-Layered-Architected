@@ -1,4 +1,4 @@
-package lk.ijse.RMMS.Controller;
+package lk.ijse.RMMS.controller;
 
 import javafx.beans.property.ReadOnlyObjectWrapper;
 import javafx.event.ActionEvent;
@@ -6,9 +6,9 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.text.Text;
-import lk.ijse.RMMS.DTO.CustomerDTO;
-import lk.ijse.RMMS.DTO.ItemDTO;
-import lk.ijse.RMMS.DTO.OrderDetailDTO;
+import lk.ijse.RMMS.dto.CustomerDTO;
+import lk.ijse.RMMS.dto.ItemDTO;
+import lk.ijse.RMMS.dto.OrderDetailDTO;
 import lk.ijse.RMMS.bo.BOFactory;
 import lk.ijse.RMMS.bo.custom.PlaceOrderBO;
 import lk.ijse.RMMS.dbConnection.DbConnection;

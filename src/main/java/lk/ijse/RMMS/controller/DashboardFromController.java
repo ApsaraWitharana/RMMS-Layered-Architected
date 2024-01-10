@@ -1,4 +1,4 @@
-package lk.ijse.RMMS.Controller;
+package lk.ijse.RMMS.controller;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

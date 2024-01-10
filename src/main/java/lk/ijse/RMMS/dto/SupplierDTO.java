@@ -1,4 +1,4 @@
-package lk.ijse.RMMS.DTO;
+package lk.ijse.RMMS.dto;
 
 public class SupplierDTO {
     private String su_id;

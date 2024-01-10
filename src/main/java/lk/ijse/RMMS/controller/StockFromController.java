@@ -1,11 +1,11 @@
-package lk.ijse.RMMS.Controller;
+package lk.ijse.RMMS.controller;
 
         import javafx.event.ActionEvent;
         import javafx.fxml.FXML;
         import javafx.scene.control.*;
         import javafx.scene.control.cell.PropertyValueFactory;
         import javafx.scene.layout.AnchorPane;
-        import lk.ijse.RMMS.DTO.StockDTO;
+        import lk.ijse.RMMS.dto.StockDTO;
         import lk.ijse.RMMS.bo.BOFactory;
         import lk.ijse.RMMS.bo.custom.StockBO;
         import lk.ijse.RMMS.dbConnection.DbConnection;
