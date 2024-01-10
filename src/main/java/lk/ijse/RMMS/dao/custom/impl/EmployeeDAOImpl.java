@@ -47,11 +47,12 @@ public class EmployeeDAOImpl implements EmployeeDAO {
             entity.getEmp_name(),entity.getEmp_dob(),entity.getEmp_address(),entity.getJobTitle(),entity.getEmp_nic(),entity.getContact(),entity.getEmp_email(),entity.getSalary(),entity.getEmp_id());
 
     }
-
+@Override
     public boolean exist (String emp_id) throws SQLException, ClassNotFoundException{
        ResultSet rst =SQLUtil.execute("SELECT emp_id FROM Employee WHERE emp_id=?",emp_id);
        return rst.next();
     }
+    @Override
 
     public void delete (String emp_id) throws SQLException, ClassNotFoundException{
 
@@ -59,6 +60,7 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 
 
     }
+    @Override
    public String generateID() throws SQLException, ClassNotFoundException{
     ResultSet rst = SQLUtil.execute("SELECT emp_id FROM Employee ORDER BY emp_id DESC LIMIT 1;");
     if (rst.next()){
@@ -72,6 +74,7 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 
     }
 
+    @Override
    public Employee search (String emp_id) throws SQLException, ClassNotFoundException{
           ResultSet rst = SQLUtil.execute("SELECT * FROM Employee WHERE emp_id=?",emp_id);
           rst.next();

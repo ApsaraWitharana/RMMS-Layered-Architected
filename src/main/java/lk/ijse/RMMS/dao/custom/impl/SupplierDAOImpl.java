@@ -12,6 +12,7 @@ import java.util.ArrayList;
 
 public class SupplierDAOImpl implements SupplierDAO {
 
+    @Override
     public ArrayList<Supplier> getAll() throws SQLException, ClassNotFoundException {
        ResultSet rst = SQLUtil.execute("SELECT * FROM Supplier") ;
        ArrayList<Supplier> allSupplier = new ArrayList<>();
@@ -30,26 +31,31 @@ public class SupplierDAOImpl implements SupplierDAO {
        return allSupplier;
     }
 
+    @Override
    public boolean save(Supplier entity) throws SQLException, ClassNotFoundException {
        return SQLUtil.execute("INSERT INTO Supplier (su_id,su_name,su_address,contact,su_email) VALUES (?,?,?,?,?)",entity.getSu_id(),entity.getSu_name(),entity.getSu_address(),entity.getContact(),entity.getSu_email());
    }
 
+   @Override
     public boolean update(Supplier entity) throws SQLException, ClassNotFoundException {
 
         return SQLUtil.execute("UPDATE Supplier SET su_name=?, su_address=?,contact=?,su_email=? WHERE su_id=?",entity.getSu_name(),entity.getSu_address(),entity.getContact(),entity.getSu_email(),entity.getSu_id());
 
     }
 
+    @Override
     public boolean exist(String su_id) throws SQLException, ClassNotFoundException{
         ResultSet rst = SQLUtil.execute("SELECT su_id FROM Supplier WHERE su_id=?",su_id);
         return rst.next();
     }
 
+    @Override
     public void delete(String su_id) throws SQLException, ClassNotFoundException{
         SQLUtil.execute("DELETE FROM Supplier WHERE su_id=?",su_id);
 
     }
 
+    @Override
     public String generateID() throws SQLException, ClassNotFoundException{
         ResultSet rst = SQLUtil.execute("SELECT su_id FROM Supplier ORDER BY su_id DESC LIMIT 1;");
         if (rst.next()){
@@ -63,6 +69,7 @@ public class SupplierDAOImpl implements SupplierDAO {
 
     }
 
+    @Override
     public Supplier search(String su_id) throws SQLException, ClassNotFoundException{
         ResultSet rst = SQLUtil.execute("SELECT * FROM Supplier WHERE su_id=?",su_id);
         rst.next();
